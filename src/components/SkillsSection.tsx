@@ -12,14 +12,11 @@ interface Skill {
 }
 
 const skills: Skill[] = [
-  { name: "React / Next.js", level: 95, category: "Frontend" },
-  { name: "TypeScript", level: 90, category: "Frontend" },
-  { name: "Three.js / WebGL", level: 85, category: "Frontend" },
-  { name: "Node.js", level: 88, category: "Backend" },
-  { name: "Python", level: 80, category: "Backend" },
-  { name: "PostgreSQL", level: 85, category: "Backend" },
-  { name: "AWS / Cloud", level: 82, category: "DevOps" },
-  { name: "Docker", level: 78, category: "DevOps" },
+  { name: "HTML", level: 90, category: "Frontend" },
+  { name: "React", level: 75, category: "Frontend" },
+  { name: "Java", level: 85, category: "Programming" },
+  { name: "C", level: 80, category: "Programming" },
+  { name: "Python", level: 78, category: "Programming" },
 ];
 
 const SkillIcon = ({ position, color }: { position: [number, number, number]; color: string }) => {

@@ -4,7 +4,6 @@ import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
 import ProjectsSection from "@/components/ProjectsSection";
 import SkillsSection from "@/components/SkillsSection";
-import ArticlesSection from "@/components/ArticlesSection";
 import ContactSection from "@/components/ContactSection";
 import SocialLinks from "@/components/SocialLinks";
 import Footer from "@/components/Footer";
@@ -49,15 +48,6 @@ const Index = () => {
             transition={{ duration: 0.8 }}
           >
             <SkillsSection />
-          </motion.div>
-          
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.8 }}
-          >
-            <ArticlesSection />
           </motion.div>
           
           <motion.div

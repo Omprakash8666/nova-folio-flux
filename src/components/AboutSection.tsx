@@ -7,10 +7,10 @@ const AboutSection = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   const highlights = [
-    { label: "Years Experience", value: "5+" },
-    { label: "Projects Completed", value: "50+" },
-    { label: "Technologies Mastered", value: "20+" },
-    { label: "Happy Clients", value: "30+" },
+    { label: "Degree", value: "CSE" },
+    { label: "Projects Completed", value: "10+" },
+    { label: "Technologies Mastered", value: "5+" },
+    { label: "Learning Journey", value: "Ongoing" },
   ];
 
   const containerVariants = {
@@ -54,9 +54,9 @@ const AboutSection = () => {
             About Me
           </span>
           <h2 className="text-4xl md:text-5xl font-bold font-display mt-3 mb-4">
-            Passionate About Creating
-            <span className="gradient-text block">Digital Excellence</span>
+            Hi, I'm <span className="gradient-text">Omprakash T</span>
           </h2>
+          <p className="text-xl text-muted-foreground">Computer Science and Engineering</p>
           <div className="neon-line max-w-xs mx-auto mt-6" />
         </motion.div>
 
@@ -64,16 +64,14 @@ const AboutSection = () => {
           {/* Bio */}
           <motion.div variants={itemVariants} className="space-y-6">
             <p className="text-lg text-muted-foreground leading-relaxed">
-              I'm a creative developer with a passion for building immersive digital 
-              experiences that push the boundaries of what's possible on the web. 
-              With expertise in modern frontend technologies and a keen eye for design, 
-              I transform complex ideas into elegant, user-friendly applications.
+              I'm a passionate Computer Science and Engineering student with a keen interest 
+              in building innovative digital solutions. With a strong foundation in programming 
+              and web development, I strive to create impactful applications that solve real-world problems.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              My journey in tech has taken me through startups, agencies, and enterprise 
-              environments, where I've honed my skills in creating scalable, performant, 
-              and visually stunning solutions. I believe in the power of code to create 
-              meaningful experiences that resonate with users.
+              My academic journey has equipped me with skills in various programming languages 
+              and frameworks. I'm constantly learning and exploring new technologies to enhance 
+              my development capabilities and contribute to meaningful projects.
             </p>
             <div className="flex flex-wrap gap-3 pt-4">
               {["React", "Three.js", "TypeScript", "Node.js", "AWS"].map((tech) => (
