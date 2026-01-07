@@ -158,10 +158,10 @@ const ContactSection = () => {
             <p className="text-center text-sm text-muted-foreground">
               Or email me directly at{" "}
               <a
-                href="mailto:hello@example.com"
+                href="mailto:omprakash866666@gmail.com"
                 className="text-primary hover:underline"
               >
-                hello@example.com
+                omprakash866666@gmail.com
               </a>
             </p>
           </motion.form>
