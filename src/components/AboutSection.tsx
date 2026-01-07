@@ -6,12 +6,6 @@ const AboutSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
-  const highlights = [
-    { label: "Degree", value: "CSE" },
-    { label: "Projects Completed", value: "10+" },
-    { label: "Technologies Mastered", value: "5+" },
-    { label: "Learning Journey", value: "Ongoing" },
-  ];
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -60,9 +54,9 @@ const AboutSection = () => {
           <div className="neon-line max-w-xs mx-auto mt-6" />
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="max-w-3xl mx-auto">
           {/* Bio */}
-          <motion.div variants={itemVariants} className="space-y-6">
+          <motion.div variants={itemVariants} className="space-y-6 text-center">
             <p className="text-lg text-muted-foreground leading-relaxed">
               I'm a passionate Computer Science and Engineering student with a keen interest 
               in building innovative digital solutions. With a strong foundation in programming 
@@ -73,7 +67,7 @@ const AboutSection = () => {
               and frameworks. I'm constantly learning and exploring new technologies to enhance 
               my development capabilities and contribute to meaningful projects.
             </p>
-            <div className="flex flex-wrap gap-3 pt-4">
+            <div className="flex flex-wrap gap-3 pt-4 justify-center">
               {["React", "Three.js", "TypeScript", "Node.js", "AWS"].map((tech) => (
                 <span
                   key={tech}
@@ -83,31 +77,6 @@ const AboutSection = () => {
                 </span>
               ))}
             </div>
-          </motion.div>
-
-          {/* Stats */}
-          <motion.div
-            variants={containerVariants}
-            className="grid grid-cols-2 gap-6"
-          >
-            {highlights.map((stat, index) => (
-              <motion.div
-                key={stat.label}
-                variants={itemVariants}
-                className="glass-card p-6 text-center group hover:border-primary/30 transition-all duration-500"
-                style={{ transitionDelay: `${index * 0.1}s` }}
-              >
-                <motion.div
-                  initial={{ scale: 0.5, opacity: 0 }}
-                  animate={isInView ? { scale: 1, opacity: 1 } : { scale: 0.5, opacity: 0 }}
-                  transition={{ delay: 0.3 + index * 0.1, duration: 0.5 }}
-                  className="text-4xl md:text-5xl font-bold gradient-text mb-2"
-                >
-                  {stat.value}
-                </motion.div>
-                <p className="text-muted-foreground text-sm">{stat.label}</p>
-              </motion.div>
-            ))}
           </motion.div>
         </div>
       </motion.div>
