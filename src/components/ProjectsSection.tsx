@@ -32,6 +32,24 @@ const projects: Project[] = [
     github: "#",
     demo: "#",
   },
+  {
+    id: 3,
+    title: "Weather API",
+    description: "A weather application that fetches real-time weather data using external APIs, displaying forecasts and current conditions.",
+    techStack: ["React", "REST API", "JavaScript"],
+    image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=800&q=80",
+    github: "#",
+    demo: "#",
+  },
+  {
+    id: 4,
+    title: "API Based Spam Message Detector",
+    description: "An intelligent spam detection system that uses API-based machine learning to classify and filter spam messages.",
+    techStack: ["Python", "API", "Machine Learning"],
+    image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&q=80",
+    github: "#",
+    demo: "#",
+  },
 ];
 
 const ProjectCard = ({ project, index }: { project: Project; index: number }) => {
