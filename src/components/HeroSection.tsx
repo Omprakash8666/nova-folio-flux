@@ -60,20 +60,10 @@ const HeroSection = () => {
 
         <motion.h1
           variants={itemVariants}
-          className="text-5xl md:text-7xl lg:text-8xl font-bold font-display mb-6 leading-tight"
+          className="text-5xl md:text-7xl lg:text-8xl font-bold font-display mb-10 leading-tight"
         >
-          <span className="block text-foreground">Creative</span>
-          <span className="gradient-text glow-text">Developer</span>
+          <span className="gradient-text glow-text">Omprakash T</span>
         </motion.h1>
-
-        <motion.p
-          variants={itemVariants}
-          className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed"
-        >
-          Crafting immersive digital experiences through the fusion of 
-          <span className="text-primary"> cutting-edge technology</span> and 
-          <span className="text-secondary"> creative design</span>.
-        </motion.p>
 
         <motion.div
           variants={itemVariants}
