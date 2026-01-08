@@ -30,7 +30,7 @@ const projects: Project[] = [
     techStack: ["React", "Python", "Firebase"],
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
     github: "#",
-    demo: "#",
+    demo: "https://omprakash8666.github.io/grow/",
   },
   {
     id: 3,
